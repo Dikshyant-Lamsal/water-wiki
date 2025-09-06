@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Home from './pages/Home';
 import Articles from './pages/Articles';
 import ArticleView from './pages/ArticleView';
@@ -57,6 +58,7 @@ export default function App() {
           <Route path="*" element={<div>Page not found</div>} />
         </Routes>
       </main>
+      <Footer />
     </div>
   );
 }
